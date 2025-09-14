@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+   lang="en-US" xml:lang="en-US"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:os="http://a9.com/-/spec/opensearch/1.1/"
+    xmlns:dstar="http://www.dwds.de/ns/xml/1.0"
+  >
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    <title>DDC KWIC Viewer</title>
+    <link rel="icon"       type="image/png" href="dstar/images/dstar-icon.png"/>
+    <link rel="stylesheet" type="text/css" href="dstar/dstar.css"/>
+    <link rel="stylesheet" type="text/css" href="kwic.css"/>
+    <script src="kwic_config.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header-box">
+        <h1 id="page-title">Corpus</h1>
+        <h2 id="total-hits">Total hits: 0</h2>
+      </div>
+      <div id="table">
+        <div class="controls">
+          <!-- <button class="button-home">Home</button> -->
+          <button class="button-home button" onclick="window.location.href='index.perl'">Home</button>
+
+          <button class="button-prev button">Previous</button>
+          <button class="button-next button">Next</button>
+          <button class="button-help button" onclick="window.open('https://kaskade.dwds.de/~moocow/software/ddc/querydoc.html', '_blank')">Help</button>
+          <input type="text" id="query-text">
+          <button class="button-submit button">Submit</button>
+
+        </div>
+        <div id="results">Loading...</div>
+        <!-- <div id="footer-box"> -->
+    </div>
+  </div>
+  <script src="kwic.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.header-box,.footer-box {
+  background-color: #f0f0f0; /* Light gray */
+  padding: 0.5rem;
+  padding-bottom: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 95vw;
+  padding: 10px;
+}
+.layout > *:last-child {
+  margin-bottom: 0;
+}
+.header-box, .footer-box,.controls,
+#results {
+  margin-bottom: 5px;
+}
+.layout > * {
+  flex: 1;
+}
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+}
+.controls button {
+  flex: 0.25;
+  min-width: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.controls input[type="text"] {
+  flex: 2;
+  min-width: 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.button-help {
+  color: red;
+  border: 1px solid red;
+  background-color: white;
+}
+.button-home {
+  color: white;
+  background-color: orange;
+  border: none;
+}
+.button {
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  vertical-align: top;
+}
+.matchedToken1 {
+  color: red;
+  font-weight: bold;
+}
+.matchedToken2 {
+  color: blue;
+  font-weight: bold;
+}

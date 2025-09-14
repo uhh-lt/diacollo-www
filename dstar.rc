@@ -1,0 +1,14 @@
+##-*- Mode: CPerl -*-
+##
+## File: dstar.rc
+## Description: example dstar.rc for DiaColloDB::WWW distribution
+
+$dstar{server_host}="localhost";			##-- server_host : remote host of associated ddc server (if any)
+$dstar{server_port}="50250";				##-- server-port : port of associated ddc server (if any)
+$dstar{corpus}="example";				##-- corpus      : symbolic name of this corpus (for display)
+$dstar{www_host}="localhost";				##-- www_host    : www server host
+$dstar{ddc_url}="./kwic";	      ##--     : kwic.html with redirection to ddc-cgi.perl --> for KWIC-links
+$dstar{www_url}="./kwic";	      ##--     : for ddc-common
+$dstar{diacollo_dbdir}="../diacollo_index"; ##-- : path to diacollo index --> DBURL
+
+1; ##-- return a true value
