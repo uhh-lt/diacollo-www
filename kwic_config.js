@@ -1,5 +1,5 @@
 const config = {
-  corpusName: "bundestag",
+  corpusName: "example",
   pageSize: 10,
   ctx_width: 8,
   help_url:"https://kaskade.dwds.de/~moocow/software/ddc/querydoc.html",
