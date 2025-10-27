@@ -140,7 +140,7 @@
   // Add listeners after DOM is ready
   window.onload = function () {
     loadResults();
-    document.getElementById('page-title').textContent = `DDC/${config.corpusName} Search`;
+    document.getElementById('page-title').textContent = `DDC/${kwic_config.corpusName} Search`;
     const prevBtn = document.querySelector('.button-prev');
     const nextBtn = document.querySelector('.button-next');
 

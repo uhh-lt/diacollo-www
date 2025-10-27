@@ -281,7 +281,7 @@ function dcpFormatHtml(data, jqXHR) {
 
     //-- setup ddc kwic links
     if (ilabel != -1 && Boolean(ddc_url_root)) {
-    	console.log("enabling kwic in diacollo.js: -- ddc_url_root", ddc_url_root);
+    	console.log("enabling kwic in diacollo.js: ddc_url_root -> ", ddc_url_root);
 
 	var qtemplate = (qinfo.qtemplate!=null ? qinfo.qtemplate : qinfo.aqtemplate);
 	$("#profileDataHtml tr:first-child").append("<th/>");
